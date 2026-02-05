@@ -1,14 +1,12 @@
-# Fichier de configuration Render pour le déploiement de l'application SIU
-
 services:
-  # Service Backend (API FastAPI)
   - type: web
-    name: siu-backend
-    env: python
-    region: frankfurt  # ou la région de votre choix
-    plan: free
-    buildCommand: pip install -r backend/requirements.txt
-    startCommand: python -m uvicorn backend.main:app --host 0.0.0.0 --port $PORT
+    name: flashcroquisapi
+    env: docker
+    region: frankfurt # optional (defaults to oregon)
+    plan: free # optional (defaults to starter)
+    branch: main # optional (defaults to master)
+    numInstances: 1
+    healthCheckPath: /healthz
     envVars:
       - key: PORT
         value: 10000
