@@ -60,7 +60,7 @@ app.include_router(search_controller.router)
 # Health check endpoint (must be before catch-all routes)
 
 # Configuration pour servir l'application Angular en production
-ANGULAR_DIST_PATH = Path(__file__).parent.parent / "frontend" / "dist" / "siu-angular" / "browser"
+ANGULAR_DIST_PATH = Path(__file__).parent.parent / "dist" / "siu-angular" / "browser"
 
 if ANGULAR_DIST_PATH.exists():
     # Servir les fichiers statiques Angular

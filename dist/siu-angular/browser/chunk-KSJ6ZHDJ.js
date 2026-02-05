@@ -1,0 +1,1 @@
+import{a as e}from"./chunk-IE4XPFBV.js";import{c as r}from"./chunk-LMV7XNWS.js";import{ba as t}from"./chunk-E7AQ6X4Y.js";var u=()=>{let i=t(e),n=t(r);return i.isAdmin()?!0:(n.navigate(["/dashboard"]),!1)};export{u as a};

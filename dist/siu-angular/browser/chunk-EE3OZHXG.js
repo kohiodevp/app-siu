@@ -1,0 +1,1 @@
+import{a as o}from"./chunk-KSJ6ZHDJ.js";import"./chunk-IE4XPFBV.js";import"./chunk-LMV7XNWS.js";import"./chunk-FBCHPQNP.js";import"./chunk-YGREV7VD.js";import"./chunk-E7AQ6X4Y.js";import"./chunk-EQDQRRRY.js";var m=[{path:"",loadComponent:()=>import("./chunk-P5ZGQUYK.js").then(t=>t.AuditDashboardComponent),canActivate:[o]}];export{m as AUDIT_ROUTES};
