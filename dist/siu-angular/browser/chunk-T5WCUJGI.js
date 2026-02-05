@@ -1,0 +1,1 @@
+import{a as o}from"./chunk-IFY2K3ZP.js";import"./chunk-XNCRNYUB.js";import"./chunk-JWWLDGKM.js";import"./chunk-NYFRATJG.js";import"./chunk-3AYM6UTQ.js";import"./chunk-E7AQ6X4Y.js";import"./chunk-EQDQRRRY.js";var n=[{path:"",loadComponent:()=>import("./chunk-3OZBABMV.js").then(t=>t.AnalyticsDashboardComponent),canActivate:[o]}];export{n as ANALYTICS_ROUTES};

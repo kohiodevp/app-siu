@@ -1,0 +1,1 @@
+import{a as t}from"./chunk-IFY2K3ZP.js";import"./chunk-XNCRNYUB.js";import"./chunk-JWWLDGKM.js";import"./chunk-NYFRATJG.js";import"./chunk-3AYM6UTQ.js";import"./chunk-E7AQ6X4Y.js";import"./chunk-EQDQRRRY.js";var m=[{path:"",loadComponent:()=>import("./chunk-7Z65HXBC.js").then(o=>o.MutationListComponent),canActivate:[t]}];export{m as MUTATION_ROUTES};

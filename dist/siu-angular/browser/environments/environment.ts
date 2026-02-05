@@ -1,10 +1,10 @@
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:8000',
+  apiUrl: 'https://flashcroquisapi-tkdm.onrender.com',
   apiPrefix: '/api',
   
   // WebSocket configuration
-  wsUrl: 'ws://localhost:8000/ws',
+  wsUrl: 'wss://flashcroquisapi-tkdm.onrender.com/ws',
   wsReconnectInterval: 5000,
   wsMaxReconnectAttempts: 5,
 

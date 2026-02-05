@@ -1,0 +1,1 @@
+import"./chunk-EQDQRRRY.js";var t=[{path:"",loadComponent:()=>import("./chunk-6XNTLDXP.js").then(o=>o.MapViewComponent)},{path:"minimal",loadComponent:()=>import("./chunk-F6FASJBZ.js").then(o=>o.MinimalMapViewComponent)}];export{t as MAP_ROUTES};
