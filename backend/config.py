@@ -10,6 +10,7 @@ load_dotenv()
 
 # CORS settings
 CORS_ORIGINS = [
+    "https://flashcroquisapi-tkdm.onrender.com",
     "http://localhost:4200",  # Angular dev server
     "http://localhost:8000",  # Alternative dev port
     "http://127.0.0.1:4200",  # Alternative localhost
