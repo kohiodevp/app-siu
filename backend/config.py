@@ -10,7 +10,6 @@ load_dotenv()
 
 # CORS settings
 CORS_ORIGINS = [
-    "https://flashcroquisapi-tkdm.onrender.com",
     "http://localhost:4200",  # Angular dev server
     "http://localhost:8000",  # Alternative dev port
     "http://127.0.0.1:4200",  # Alternative localhost
@@ -41,6 +40,12 @@ if PRODUCTION_ORIGINS and PRODUCTION_ORIGINS[0]:
             validated_origins.append(origin)
 
     CORS_ORIGINS.extend(validated_origins)
+
+# Charger les origines CORS depuis la variable d'environnement CORS_ORIGINS (alternative)
+CORS_ORIGINS_RAW = os.getenv('CORS_ORIGINS', '')
+if CORS_ORIGINS_RAW:
+    env_origins = [origin.strip() for origin in CORS_ORIGINS_RAW.split(',') if origin.strip()]
+    CORS_ORIGINS.extend(env_origins)
 
 # File upload settings
 UPLOAD_FOLDER = "uploads"
