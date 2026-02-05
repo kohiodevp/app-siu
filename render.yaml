@@ -1,0 +1,32 @@
+# Fichier de configuration Render pour le déploiement de l'application SIU
+
+services:
+  # Service Backend (API FastAPI)
+  - type: web
+    name: siu-backend
+    env: python
+    region: frankfurt  # ou la région de votre choix
+    plan: free
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: python -m uvicorn backend.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: SECRET_KEY
+        sync: false  # à configurer dans les paramètres du service
+      - key: ALGORITHM
+        value: HS256
+      - key: ACCESS_TOKEN_EXPIRE_MINUTES
+        value: 60
+      - key: DATABASE_URL
+        sync: false  # à configurer dans les paramètres du service
+      - key: FRONTEND_URL
+        sync: false  # à configurer dans les paramètres du service
+      - key: CORS_ORIGINS
+        sync: false  # à configurer dans les paramètres du service
+      - key: DEBUG
+        value: false
+      - key: LOG_LEVEL
+        value: info
+
+ 
